@@ -1,0 +1,16 @@
+table{
+    border:inset 0.5px ;
+    border-color: black;
+    border-width: 1px;
+}
+.dot {
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+}
+th {
+    width: 500px;
+    padding: 100px;
+}

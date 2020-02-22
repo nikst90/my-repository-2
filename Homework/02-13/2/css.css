@@ -1,0 +1,17 @@
+
+table{
+    border:inset 0.5px #A52A2A;
+    width: 30%;
+    border-collapse: collapse}
+td,td{
+    border-bottom:1px solid black;
+    height: 10px;
+    border-left:0px none;
+    border-right:0spx none;}
+table tr#ROW1{
+    background-color:#A52A2A;
+    color:white;}
+tr:nth-child(even) {
+    background-color: #FFF3BB;}
+tr:nth-child(odd) {
+    background-color: #FFF3D8;}
