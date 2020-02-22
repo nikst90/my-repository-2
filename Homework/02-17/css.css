@@ -4,12 +4,10 @@ div {
     padding-bottom: 10%;
     margin:1.66%;
 }
-.even{
-    background-color: black;
-}
-.odd{
-    background-color: cornflowerblue;
-}
+div:nth-child(even) {
+    background-color: dodgerblue;}
+div:nth-child(odd) {
+    background-color: black;}
 div:hover{
     background-color: orange;
 }
