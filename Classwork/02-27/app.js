@@ -8,6 +8,3 @@ if (user == "admin" && pass == "master") {
 } else {
     alert = ("viso gero");
 }
-
-
-
