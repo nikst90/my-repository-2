@@ -1,10 +1,16 @@
 let user = prompt('enter usermane');
 let pass = prompt("enter password");
 
-if (user == "admin" && pass == "master") {
-    alert("Hello");
-} else if (user!=="" && pass == user + 11) {
-    let res = prompt("Hello");
+console.log({user, pass});
+
+if ((user != "admin"  && pass != "master") || (user != user  && pass != user+11)) {
+    document.write("Wrongpassword");
+}else { if (user == "admin" && pass == "master") {
+    document.write("Hello");
+}else if (user && pass == (user + "11")) {
+    document.write("Hello");
 } else {
-    alert = ("viso gero");
+    document.write("viso gero");
 }
+}
+

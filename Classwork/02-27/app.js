@@ -1,10 +1,16 @@
-let user = prompt('enter usermane');
-let pass = prompt("enter password");
-
-if (user == "admin" && pass == "master") {
-    alert("Hello");
-} else if (user!=="" && pass == user + 11) {
-    let res = prompt("Hello");
+let username = prompt('Username:'),
+    password = prompt('Password:');
+console.log({username, password});
+if (!username || !password) {
+    document.write('Viso gero!');
 } else {
-    alert = ("viso gero");
+    if (
+        (username == 'admin' && password == 'master')
+        ||
+        (username && password == username + '11')
+    ) {
+        document.write(`Sveiki, ${username}`);
+    } else  {
+        document.write('Neteisingas slaptažodis');
+    }
 }
