@@ -90,21 +90,86 @@ for (i=0; i<=arr5.length-1; i++ ){
 // for-in
 //Duotas objektas green: žalia, red: raudona, blue: mėlyna. Parodykite šio objekto raktus ir elementus.
 
+let colours={
+    green: "žalia",
+    red: "raudona",
+    blue: "mėlyna"}
 
+for (let property in colours){
+    console.log(`${property} ${colours[property]}`)
+}
 
    // Duotas objektas su raktais Mantas, Paulius, Mindaugas su reikšmėm 200, 300, 300. Parodykite eilutes tokiu formatu: Mantas - 200 EU atlyginimas.
 
+let names= {
+    "mantas": 200,
+    "paulius": 300,
+    "mindaugas": 300
+}
+for( let wage in names){
+    console.log(`${wage} - ${names[wage]} eur `)
+}
 
    // Duotas masyvas su elementais 2, 5, 9, 15, 0, 4. Naudodami for ir if parodykite masyvo elementus kurie yra daugiau nei 3, bet mažiau nei 10
-
+let arr6 = [2, 5, 9, 15, 0, 4];
+let i=0;
+for( i=0; i<=arr6.length-1; i++)
+{
+    if (arr6[i]>3 && arr6[i]<10){
+        console.log(arr6[i])
+    }
+}
 
     //Duotas masyvas su skaičiais. Skaičiai gali būti teigiami ir neigiami. Raskite teigiamų masyvo skaičių sumą.
 
+let arr7 = [-9, -5, -1, 5, 3, 6];
+let i=0;
+let sum=0
+for( i=0; i<=arr7.length-1; i++)
+{
+    if (arr7[i]>0 ){
+
+        sum=sum+arr7[i]
+
+    }
+}
+console.log(sum)
+
 
     // Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite visus šio masyvo elementus pasinaudoję ciklais for, while
+let arr8 = [1, 2, 3, 4, 5];
+i=0
+for( i=0; i<=arr8.length-1; i++){
+    while (i<=arr8.lenght-1){
+        i++
+
+
+    }
+    console.log(arr8[i])
+}
 
 
   // Duotas masyvas su elementais [2, 3, 4, 5]. Parodykite šio masyvo elementų produktą (daugyba), naudokite for ciklą.
 
+let arr9=[2, 3, 4, 5];
+i=0
+sum = 1;
+for( i=0; i<=arr9.length-1; i++){
+    sum=sum*arr9[i];
+}
+
+console.log(sum);
+
 
     //Duotas objektas su raktais Vilnius, Riga, Talinas ir reikšmėm Lietuva, Latvija, Estija. Parodykite eilutes tokiu formatu: Vilnius yra Lietuva naudodami for-in ciklą;
+
+let cities = {
+    "Vilnius": "Lietuva",
+    "Riga": "Latvia",
+    "Talinas": "Estija"
+};
+
+
+    for( let capital in cities){
+        console.log(`${capital} yra ${cities[capital]}`)
+    }
