@@ -1,9 +1,9 @@
 let time
 
 do {
-    time = prompt('enter time');
-    isNaN(time)==true || time<0 || time >24
-}while(isNaN(time)==true || time<0 || time >24)
+    time = parseInt(prompt('enter time'));
+}while(isNaN(time)==true || time<0 || time >24 )
+
 
  if (0<= time && time<= 3 || time == 24) {
     alert('naktis');
