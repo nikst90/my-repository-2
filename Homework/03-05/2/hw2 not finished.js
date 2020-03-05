@@ -70,15 +70,26 @@ console.log(sum);
 //Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite visus masyvo elementus ekrane.
 
 
+let arr5= [1, 2, 3, 4, 5];
+let i=0
+for (i=0; i<=arr5.length-1; i++ ){
+    console.log(arr5[i]);
+}
 
 
 
+//  Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite šio masyvo elementų sumą.
+ arr5= [1, 2, 3, 4, 5];
+sum=0
+let i=0
+for (i=0; i<=arr5.length-1; i++ ){
+    console.log(sum=sum+arr5[i]);
+}
 
-  //  Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite šio masyvo elementų sumą.
 
-
-    // for-in
+// for-in
 //Duotas objektas green: žalia, red: raudona, blue: mėlyna. Parodykite šio objekto raktus ir elementus.
+
 
 
    // Duotas objektas su raktais Mantas, Paulius, Mindaugas su reikšmėm 200, 300, 300. Parodykite eilutes tokiu formatu: Mantas - 200 EU atlyginimas.
