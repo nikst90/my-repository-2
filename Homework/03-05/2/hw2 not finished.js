@@ -70,8 +70,9 @@ console.log(sum);
 //Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite visus masyvo elementus ekrane.
 
 
-     // for-loop will stop here! resulting in ["value1<br />", "Value2", etc...]
-}
+
+
+
 
   //  Duotas masyvas su elementais [1, 2, 3, 4, 5]. Parodykite šio masyvo elementų sumą.
 
