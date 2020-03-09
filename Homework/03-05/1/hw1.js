@@ -62,7 +62,7 @@ console.log(arr2[1][0]);
 let obj1 = {
     js: ['jQuery', 'Angular'],
     php: 'hello', css: 'world'
-}
+};
 console.log(obj1.js[0]);
 
    // Sukurkite dvimatį ???????masyvą??????. Pirmieji du raktai yra lt ir en. Raktai turi savaitės dienų vardų masyvus lietuviškai ir angliškai. Naudodamiesi šiuo masyvu, pirmadienį parodykite lietuvių kalba, o trečiadienį - anglų kalba.

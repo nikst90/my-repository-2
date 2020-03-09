@@ -140,14 +140,14 @@ console.log(sum)
 let arr8 = [1, 2, 3, 4, 5];
 i=0;
 for( i=0; i<=arr8.length-1; i++){
-    while (i<=arr8.lenght-1){
+    while (i<=arr8.length-1){
         i++
 
 
     }
     console.log(arr8[i])
 }
-
+// BAD // ^^^^
 
   // Duotas masyvas su elementais [2, 3, 4, 5]. Parodykite šio masyvo elementų produktą (daugyba), naudokite for ciklą.
 
@@ -171,3 +171,5 @@ let cities = {
     for( let capital in cities){
         console.log(`${capital} yra ${cities[capital]}`)
     }
+
+
