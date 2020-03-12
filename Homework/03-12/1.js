@@ -32,7 +32,8 @@ function dayOfTheWeek (dayNr) {
             5: "penktadienis",
             6: "sestadienis",
             7: "sekmadienis"
-    };
+    }
     let dayNrCheck=week[dayNr];
     return dayNrCheck;
 }
+dayOfTheWeek(4);
