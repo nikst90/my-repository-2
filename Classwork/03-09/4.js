@@ -63,6 +63,7 @@ let str_u = toTitleCase(str, ',');
 console.log(str);
 console.log(str_u);
 
+let lala document.querySelector("body > div.page-wrapper.page-wrapper_sidebar_on > div.page.page_sidebar_on.page_inner_padding.page_sidebar-animation-on > div.page__inner > main > div.content > article > div:nth-child(3) > h2:nth-child(4) > a")
 
 
 
