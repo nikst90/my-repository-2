@@ -1,96 +1,41 @@
-// <input class="form-control" type="text" id="inputCaps" placeholder="Fill me in">
-//     <div class="input-group-append">
-//     <button class="btn btn-outline-secondary" id="toUpCase" type="button">To Upper Case</button>
-// <button class="btn btn-outline-secondary" id="toLowCase" type="button">To Lower Case</button>
-// <button class="btn btn-outline-secondary" id="firstUpCase" type="button">First Upper Case</button>
-// <button class="btn btn-outline-secondary" id="firstLowCase" type="button">First Lower Case</button>
-// </div>
-
-
-
-let inputCaps = document.querySelector("#inputCaps");
-
-
+//first block
 document.getElementById("btn_1").addEventListener("click", function() {
     alert("Hello World!");
 });
 
 
+//2nd block
+let input2Value = document.querySelector("#inputCaps").value;
 document.getElementById("btn_toUpCase").addEventListener("click", function() {
-    document.getElementById("inputCaps").style.textTransform = "uppercase";
+    let input2Value = document.querySelector("#inputCaps").value;
+    document.querySelector("#inputCaps").value=input2Value.toUpperCase();
 });
+
 document.getElementById("btn_toLowCase").addEventListener("click", function() {
-    document.getElementById("inputCaps").style.textTransform = "lowercase";
-});
-document.getElementById("btn_firstUpCase").addEventListener("click", function() {
-            document.querySelector(inputCaps).addEventListener("click", function() {
-                inputCaps.value = capitalizeFirstLetter(inputCaps.value)
-
-
-
+    let input2Value = document.querySelector("#inputCaps").value;
+    document.querySelector("#inputCaps").value=input2Value.toLowerCase();
 });
 
-// document.getElementById("btn_firstLowCase").addEventListener("click", function() {
-//     document.getElementById("inputCaps").style.
-//
-// });
-// -----------------------------
-//
+document.getElementById("btn_firstUpCase").addEventListener("click", function () {
+    let input2Value = document.querySelector("#inputCaps").value.toLowerCase();
+    document.querySelector("#inputCaps").value=input2Value.charAt(0).toUpperCase() + input2Value.slice(1);
+});
 
+document.getElementById("btn_firstLowCase").addEventListener("click", function () {
+    let input2Value = document.querySelector("#inputCaps").value.toUpperCase();
+    document.querySelector("#inputCaps").value=input2Value.charAt(0).toLowerCase() + input2Value.slice(1);
+});
 
+//QUESTOn: Kodel negalima buvo prideti
+// let input2Value = document.querySelector("#inputCaps").value.toUpperCase();
+// prie pagrindinio scoupo?
 
+//4rd block
 
+document.getElementById("btn_disable").addEventListener("click", function () {
+    document.querySelector("body > div > div:nth-child(5) > div.card-body > div:nth-child(3) > div.card-body > div > input").disabled = true
+});
 
-
-//
-//
-//
-// function capitalizeFirstLetter2(string) {
-//     document.getElementById("inputCaps").style.textTransform = string.charAt(0).toUpperCase() + string.slice(1)
-//     return string.charAt(0).toUpperCase() + string.slice(1);
-// }
-//
-
-
-//First caps, after comma caps.
-function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-};
-
-// function isLetter(val) {
-//     return val.toLowerCase() != val.toUpperCase();
-// }
-//
-// function toTitleCase(str, d = ' ') {
-//     let parts = str.split(d);
-//
-// 	for (let i in parts) {
-//         let special = [];
-//
-// 		for (j = 0; j < parts[i].length; j++) {
-//             if (isLetter(parts[i].charAt(j)) === false) {
-//                 special.push(parts[i].charAt(j));
-//             } else {
-//                 break;
-//             }
-//         }
-//
-//         parts[i] = parts[i].slice(special.length);
-//
-//         parts[i] = capitalizeFirstLetter(parts[i]);
-//
-// 		if (special.length > 0) {
-//             parts[i] = special.join('') + parts[i];
-//         }
-//     }
-//
-// 	return parts.join(d);
-// }
-//
-// let name = 'petras petraitis';
-//
-// // name = toTitleCase(name);
-//
-// // console.log(`Hello, ${name}`);
-//
-// let str = 'Lorem ipsum dolor sit amet, .  . 1  consectetur adipisicing elit, sed do eiusmod';
+document.getElementById("btn_enable").addEventListener("click", function () {
+    document.querySelector("body > div > div:nth-child(5) > div.card-body > div:nth-child(3) > div.card-body > div > input").disabled = false
+});

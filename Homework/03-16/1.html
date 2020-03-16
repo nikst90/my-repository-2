@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css.css">
+
+    <style> li {
+        color: gray;
+    }
+    </style>
     <title>Hello, world!</title>
 </head>
 <body>
@@ -65,27 +69,31 @@
             <li>class add/remove
             </li>
         </div>
-        <div class="card-body">
-            <div class="form-group row">
-                <label for="email" class="col-2 col-form-label">Email</label>
-                    <div class="col-12 col-md-10">
-                        <input class="form-control form-control-lg" type="email" id="email" placeholder="Enter email">
-                        <small class="form-text text-muted">Your email will not ever be shared</small>
-                    </div>
-            </div>
-            <div class="form-group row">
-                <label for="email" class="col-2 col-form-label">Phone number</label>
-                <div class="col-12 col-md-10">
-                    <input class="form-control form-control-lg" type="email" id="phoneNr" placeholder="Enter phone number">
-                    <small class="form-text text-muted">Please check phone number</small>
-                    <button class="btn btn-success" type="submit">Reset all</button>
-                </div>
 
-            </div>
+        <div class="card-body">
+            <form>
+                <!-- TEXT FIELD GROUPS -->
+                <div class="form-group row">
+                    <label for="email" class="col-2 col-form-label">Email</label>
+                    <div class="col-12 col-md-10">
+                        <input class="form-control" type="email" id="email" placeholder="Enter email" required>
+
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-2 col-form-label">Phone number</label>
+                    <div class="col-12 col-md-10">
+                        <input class="form-control" type="tel" id="phoneNr" placeholder="Enter phone number" pattern="[+, 0-9]{12}" required>
+
+
+                <button class="btn btn-outline-dark" type="submit">Submit</button>
+            </form>
 
         </div>
     </div>
     <br>
+
+
 
 
 
@@ -179,7 +187,7 @@
 <!--    7th block-->
     <div class="card">
         <div class="card-header">
-            My Card
+            Paspaudzius ant mygtuko parodikite informacija apie save modalineme lange
         </div>
         <div class="card-body text-center">
             <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Launch Modal</button>
