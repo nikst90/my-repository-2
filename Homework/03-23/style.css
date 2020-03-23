@@ -18,11 +18,6 @@
     display:inline-block;
     background-color: red;
 }
-
-.red{ background-color: red}
-.blue{ background-color: blue}
-.yellow{ background-color: yellow}
-
 #container {
     width: 1110px;
     height: 400px;

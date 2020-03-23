@@ -17,16 +17,16 @@ document.getElementById("button2").addEventListener("click", function() {
     anime({
         targets: 'div.result',
         translateX: {
-            value: '*=2.5', // 100px * 2.5 = '250px'
+            value: '*=9.5',
             duration: 1000
         },
         width: {
-            value: '-=20px', // 28 - 20 = '8px'
+            value: '-=20px',
             duration: 1800,
             easing: 'easeInOutSine'
         },
         rotate: {
-            value: '+=2turn', // 0 + 2 = '2turn'
+            value: '+=2turn',
             duration: 1800,
             easing: 'easeInOutSine'
         },
@@ -44,16 +44,28 @@ document.getElementById("button3").addEventListener("click", function() {
         keyframes: [
             {translateY: 0},
             {translateX: 1038},
-            {translateY: 370},
+            {translateY: 330},
             {translateX: 0},
             {translateY: 0}
         ],
         duration: 4000,
         easing: 'easeOutElastic(1, .8)',
     });
+
 });
 
+let animation = anime({
+    targets: 'div.result',
+    translateX: 1038,
+    delay: function(el, i) { return i * 100; },
+    direction: 'alternate',
+    loop: true,
+    autoplay: false,
+    easing: 'easeInOutSine'
+});
 
+document.querySelector('#button4').onclick = animation.play;
+document.querySelector('#button5').onclick = animation.pause;
 
 
 
