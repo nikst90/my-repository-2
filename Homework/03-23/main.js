@@ -35,6 +35,28 @@ document.getElementById("button2").addEventListener("click", function() {
 });
 
 
+document.getElementById("button3").addEventListener("click", function() {
+    var relativeEl = document.querySelector('div.result');
+    relativeEl.style.transform = 'translateX(100px)';
+
+    anime({
+        targets: 'div.result',
+        keyframes: [
+            {translateY: 0},
+            {translateX: 1038},
+            {translateY: 370},
+            {translateX: 0},
+            {translateY: 0}
+        ],
+        duration: 4000,
+        easing: 'easeOutElastic(1, .8)',
+    });
+});
+
+
+
+
+
 const selectElement = document.querySelector('.shapes');
 
 selectElement.addEventListener('change', (event) => {

@@ -1,4 +1,4 @@
-.circle {
+.result {
     width:70px;
     height:70px;
     margin:0;
@@ -6,6 +6,7 @@
     border-radius:50px;
     position:absolute;
     display:inline-block;
+    background-color: red;
 }
 .block {
     width:70px;
@@ -15,7 +16,7 @@
 
     position:absolute;
     display:inline-block;
-
+    background-color: red;
 }
 
 .red{ background-color: red}
