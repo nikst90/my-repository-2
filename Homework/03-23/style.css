@@ -1,0 +1,30 @@
+.circle {
+    width:70px;
+    height:70px;
+    margin:0;
+    padding:0;
+    border-radius:50px;
+    position:absolute;
+    display:inline-block;
+}
+.block {
+    width:70px;
+    height:70px;
+    margin:0;
+    padding:0;
+
+    position:absolute;
+    display:inline-block;
+
+}
+
+.red{ background-color: red}
+.blue{ background-color: blue}
+.yellow{ background-color: yellow}
+
+#container {
+    width: 1110px;
+    height: 400px;
+    position: relative;
+    border: 1px solid black;
+}
