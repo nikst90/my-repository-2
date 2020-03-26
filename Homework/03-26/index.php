@@ -1,5 +1,5 @@
 <?php
-////-----------------------------------------------------------
+//-----------------------------------------------------------
 $nr1 ="Sukurkite num kintamąjį ir priskirkite jam reikšmę 3. Parodykite šio kintamojo reikšmę ekrane, naudodami alert metodą.";
 
 $num = 3;
@@ -12,7 +12,6 @@ alert($num);
 
 
 
-echo "<br><br><br><br>";
 ////-----------------------------------------------------------
 echo "Sukurkite kintamuosius a = 10 ir b = 2. Ekrane parodykite jų sumą, skirtumą, daugybos ir padalijimo rezultatus.";
 
@@ -117,11 +116,139 @@ function prompt($prompt_msg){
 }
 
 //program
-$prompt_msg = "Please type your name.";
+$prompt_msg = "Enter name";
 $name = prompt($prompt_msg);
 
 $output_msg = "Your name  ".$name.".";
 echo($output_msg);
 
-?>
 
+
+echo "<br><br><br><br>";
+//-----------------------------------------------------------
+
+echo "Sukurkite masyvą a, b, c. Parodykite masyvą naudodami console.log funkciją.";
+echo "<br><br>";
+$arr = [
+    "a",
+    "b",
+    "c"
+];
+var_dump($arr);
+echo "<br><br><br><br>";
+//-----------------------------------------------------------
+echo "Naudodamiesi ankstesnės užduoties masyvu, parodykite pirmojo, antrojo ir trečiojo elementų turinį.";
+echo "$arr[0]";
+echo "<br>";
+echo "$arr[1]";
+echo "<br>";
+echo "$arr[2]";
+
+
+
+echo "<br><br><br><br>";
+//-----------------------------------------------------------
+echo "Sukurkite masyvą a, b, c, d ir naudodami jį parodykite eilutė a + b, c + d.";
+echo "<br><br>";
+$arr1=[
+    "a",
+    "b",
+    "c",
+    "d"
+];
+echo "$arr1[0]+$arr1[1], $arr1[2]+$arr1[3]";
+echo "<br><br><br><br>";
+//-----------------------------------------------------------
+echo "Sukurkite masyvą su elementais 2, 5, 3, 9. Pirmąjį masyvo elementą padauginkite iš antrojo, o trečiąjį elementą iš ketvirtojo. Sudėkite rezultatus, priskirkite kintamąjam. Parodykite šio kintamojo reikšmę.";
+echo '<br>';
+$arr3 = [
+    2,
+    5,
+    3,
+    9
+];
+echo '<br>';
+$result1 = (($arr3[0]*$arr3[1])+($arr3[2]*$arr3[3]));
+echo $result1;
+echo "<br><br><br><br>";
+
+
+
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+//-----------------------------------------------------------
+
+//NOT DONE //NOT DONE //NOT DONE
+
+
+////Objektai (asociaciniai masyvai)
+////Sukurkite objektą a = 1, b = 2, c = 3. Parodykite elemento c reikšmę dviem būdais: per skliaustelius ir kaip objekto savybę.
+//
+//let obj = {
+//    a: 1,
+//    b: 2,
+//    c: 3
+//}
+//console.log (obj[c]);
+//console.log (obj.c);
+
+// //   Sukurkite objektą su savaitės dienomis. Raktai jame turėtų būti dienų skaičiai nuo savaitės pradžios (pirmadienis - pirmasis ir t.t.). Parodykite dabartinę savaitės dieną.
+////   &&
+////    Sukurkite kintamjį day kuriame saugomas savaitės dienos numeris. Atspausdinkite savaitės dieną naudojant sita kintamajį.
+//
+//
+//let weekdays = {
+//    1: "pirmadienis",
+//    2: "antradienis",
+//    3: "treciadienis",
+//    4: "ketvirtadienis",
+//    5: "penktadienis",
+//    6: "sestadienis",
+//    7: "sekmadienis"
+//}
+//let day_now = new Date();
+//let day= day_now.getDay();
+//console.log (weekdays [day]);
+//
+//
+//
+////    Daugialypiai masyvai
+// //Yra pateiktas masyvas [[1, 2, 3], [4, 5, 6], [7,8,9]]. Parodykite skaičių 4 iš šio masyvo.
+//
+//let arr2 = [[1, 2, 3], [4, 5, 6], [7,8,9]];
+//console.log(arr2[1][0]);
+//
+//
+// //   Duotas objektas {js: ['jQuery', 'Angular'], php: 'hello', css: 'world'}. Parodykite žodį jQuery.
+//let obj1 = {
+//    js: ['jQuery', 'Angular'],
+//    php: 'hello', css: 'world'
+//};
+//console.log(obj1.js[0]);
+//
+//   // Sukurkite dvimatį ???????masyvą??????. Pirmieji du raktai yra lt ir en. Raktai turi savaitės dienų vardų masyvus lietuviškai ir angliškai. Naudodamiesi šiuo masyvu, pirmadienį parodykite lietuvių kalba, o trečiadienį - anglų kalba.
+//
+//let lt = ["pirmadienis",
+//    "antradienis",
+//    "treciadienis",
+//    "ketvirtadienis",
+//    "penktadienis",
+//    "sestadienis",
+//    "sekmadienis"
+//]
+//let eng =["monday",
+//    "tuesday",
+//    "wednessday",
+//    "thursday",
+//    "friday",
+//    "satturday",
+//    "sunday"
+//]
+//let dual_arr = [lt, eng]
+//console.log(dual_arr[0][1]+" "+dual_arr[1][2]);
+//
+////    Sukurkite kintamjį lang (reikšmės lt arba en) ir naudojant lang ir day parodykite dieną (edited)
+//
+//// ???????????????
+?>
